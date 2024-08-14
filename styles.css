@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Noto+Sans+Hebrew:wght@100..900&display=swap');
+
+body {
+    background-image: url(./bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #EBECF1;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    height: 500px;
+
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-style:normal;
+    font-size: 3rem;
+
+}
+
+.input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+#add {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#add:hover {
+    background-color: #0056b3;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#clear,
+#sort {
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sort {
+    background-color: #28a745;
+}
+
+#clear:hover,
+#sort:hover {
+    opacity: 0.8;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.task-item div {
+    display: flex;
+    gap: 10px; 
+}
+
+.task-item button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+}
+
+.task-item .delete-btn {
+    color: #dc3545;
+}
+
+.task-item .edit-btn {
+    color: #28a745;
+}
